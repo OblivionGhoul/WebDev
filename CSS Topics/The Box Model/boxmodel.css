@@ -1,0 +1,67 @@
+/*
+- width and height change the width and height of the content area
+- borders add a border around the box
+  - border-width - thickness of border
+  - border-color - color of the border
+  - border-style - line style - dashed, solid, etc
+  - border-left-width - changes width of the left side
+  - set border in one line (border: width style color)
+  - border-radius - add rounded corners (px or percentage - 50% for circle)
+- padding - space between the content area and border of an element (space inside border)
+  - shorthand property (1: all 4 sides, 2: ver, hor, 3: top, hor, bot, 4: top, right, bot, left)
+- margin - space on the outside of the border - shorthand properties same as padding
+- display property 
+  - inline - width&height ignored, margin&padding push elements away hor but not ver
+  - block - break flow of doc; width, height, margin&pading are respected
+  - inline-block - behave like inline, but width, height, margin&pading are respected
+*/
+
+body {
+    /* Body automatically has margins, so space between content and side */
+    margin: 0;
+}
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: #e5989b;
+}
+
+h1 {
+    background-color: pink;
+    width: 180px;
+    padding-left: 100px;
+    margin: 0;
+}
+
+#one {
+    background-color: #e5989b;
+    border-width: 5px;
+    border-color: black;
+    border-style: solid;
+    /* border matches size of original box instead of increasing the size */
+    box-sizing: border-box;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+#two {
+    background-color: #b5838d;
+    border-color: #ffcdb2;
+    border-width: 3px;
+    border-style: dashed;
+    border-left-width: 8px;
+    padding-right: 10px;
+    margin: 100px;
+}
+
+#three {
+    background-color: #6d6875;
+    border: 4px solid black;
+    border-left-style: dotted;
+    border-radius: 10px;
+}
+
+button {
+    padding: 10px 20px 30px 40px;
+}

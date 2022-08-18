@@ -1,0 +1,105 @@
+/*
+- order of styles matter, ones closer to the bottom are applied (top to bot)
+- specificity - the more specific selector wins when rules could apply to the same element
+  - id > class > element
+  - use "!important" to ignore specificity and use, but not recommended 
+
+- universal selector to select all elements (*)
+- element selector to select a given element (h1)
+- selector list to select elements (h1, h2)
+- select by id to select a single specific element (#id)
+- class allows us to group content together and select more than one (.classname)
+- decendent selectors to select an element within another element or class
+- adjacent selectors (h1 + p) <- only select paragraphs directly after h1
+- direct child (div > li) select only the li elements that are direct children of the div element
+- attribute selector to select elements with certain attributes (element[attribute])
+- pseudo classes - keyword after selector to specify a special state of the element (:classname)
+  - :hover = when mouse hovers over an element
+  - :active = when element is used like a button
+  - :checked = for radio and checkbox forms when an element is checked
+  - :nth-of-type() = matches elements of a given type, based on position of siblings
+- pseudo elements - keyword added to selector to style a certain part of the selected element (::name)
+  - ::first-letter = gets the first letter of text
+  - ::first-line = gets the first line of text
+  - ::selection = gets text that user highlighted
+*/
+
+body {
+    background-color: #f1faee;
+}
+
+button {
+    font-size: 30px;
+    background-color: #a8dadc;
+}
+
+h1, h2 {
+    color: #1d3557;
+}
+
+#signup {
+    background-color: #1d3557;
+    color: #f1faee;
+}
+
+span {
+    color: #457b9d;
+}
+
+.tag {
+    background-color: #e63946;
+    color: #f1faee;
+    font-size: 15px;
+}
+
+.post a {
+    color: #457b9d;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer a {
+    color: #e63946;
+}
+
+h2 + button {
+    font-size: 20px;
+}
+
+footer > a {
+    color: #457b9d;
+}
+
+input[type="password"] {
+    color: greenyellow;
+}
+
+.post button:hover {
+    background-color: #e63946;
+    color: #f1faee;
+}
+
+.post a:hover {
+    text-decoration: underline;
+}
+
+.post button:active {
+    background-color: #02c39a;
+}
+
+/* param 3 for 3rd and 3n for very 3rd */
+.post:nth-of-type(2n) {
+    background-color: #dfe8dc;
+}
+
+h2::first-letter {
+    font-size: 50px;
+}
+
+p::first-line {
+    color: purple;
+}
+
+p::selection {
+    background-color: orange;
+}

@@ -1,0 +1,32 @@
+/*
+- by default, h1 are block and span are inline, display property lets us change that
+- display property
+  - inline - width&height ignored, margin&padding push elements away hor but not ver
+  - block - break flow of doc; width, height, margin&pading are respected
+  - inline-block - behave like inline, but width, height, margin&pading are respected
+  - none - to hide elements but they are still there
+*/
+
+span {
+  background-color: palevioletred;
+  border: 1px solid black;
+  width: 500px;
+  padding: 50px;
+  margin: 50px;
+}
+
+h1 {
+  background-color: paleturquoise;
+  border: 1px solid black;
+  width: 300px;
+  padding: 10px;
+  margin: 50px;
+}
+
+div {
+  width: 200px;
+  height: 200px;
+  background-color: olivedrab;
+  border: 5px solid black;
+  display: inline-block;
+}

@@ -1,0 +1,27 @@
+/* Using imported font */
+body {
+    font-family: 'BIZ UDGothic', sans-serif;
+}
+
+section {
+    width: 80%;
+    height: 800px;
+    /* setting a background image */
+    background-image: url("https://images.unsplash.com/photo-1656428379377-98039ab9695a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+
+    /* 
+    - background properties to fix the image correctly 
+      - cover - large as possible without strectching, but maybe cropped
+      - contain - scales image as large as possible without cropping or strectching
+      - auto - scales image to keep proportions
+    - background-postion - changes where image starts being viewed
+    */
+    background-size: cover;
+    background-position: top right;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 100px;
+    color: rgb(221, 55, 202);
+}

@@ -1,0 +1,25 @@
+/* 
+- color property changes text color 
+- background-color property changes background color
+- background property more powerful, can change more than the color like an image
+- text align aligns text within content
+- font-weight is how bold something is
+- text-decoration to add lines with text and also remove links being underlined by setting to none
+- line-height to change height of line spacing
+- letter-spacing to change space between letters
+- font-size to change size of text
+- font-family to change font (list different fonts after with commas as a fallback)
+*/
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: #f78120 underline wavy 5px;
+    letter-spacing: 10px;
+    font-size: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+    line-height: 1.5;
+}

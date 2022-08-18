@@ -1,0 +1,78 @@
+/* changing the root element font size, which affects rems */
+html {
+    font-size: 10px;
+}
+
+#percentages {
+    background-color: #6d6875;
+    width: 800px;
+    height: 800px;
+}
+
+#percentages div {
+    background-color: #e5989b;
+    /* 50% of what the parent is */
+    width: 50%;
+    height: 50%;
+}
+
+#ems h1 {
+    font-size: 40px;
+    border: 1px solid black;
+    /* 200% of the element itself */
+    line-height: 200%;
+}
+
+#ems h2 {
+    /* 2 times the size of its parent (article) */
+    font-size: 2em;
+    /* margin and padding refer to the element itself, so 1 times the element size */
+    margin-left: 1em;
+}
+
+#ems h3 {
+    /* 1.5 times the size of its parent (article) */
+    font-size: 1.5em;
+}
+
+#ems p {
+    /* 1 times the size of its parent (article) */
+    font-size: 1em;
+}
+
+#ems {
+    font-size: 20px;
+}
+
+button {
+    /* 
+    - Use em instead of px because if button grows/strinks, it will keep its shape 
+    - rems easier to predict, but ems more useful if you need a small reusable component 
+      that can scale well depending on the font size
+    */
+    font-size: 1em;
+    padding: 0 1em;
+    border-radius: 0.5em;
+    background-color: aquamarine;
+    color: #e5989b;
+}
+
+ul {
+    /* Since we have nested ul, it will keep being multiplied by 1.5 and its parent */
+    font-size: 1.5em;
+}
+
+#rems h2 {
+    /* Based on the root element font size instead of parent (3 times greater) */
+    font-size: 3rem;
+}
+
+#rems h3 {
+    /* Based on the root element font size instead of parent (2 times greater) */
+    font-size: 2rem;
+}
+
+#rems ul {
+    /* Based on the root element font size instead of parent (0.8 times greater) */
+    font-size: 0.8rem;
+}
